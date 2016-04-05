@@ -5,5 +5,4 @@ Instruction for buildmachine:
 - run start.sh to create and start the pirateship build machine. when done, you will be inside the machine. to get back in, run `vagrant ssh`.
 - to build the image, from inside the build machine run `/vagrant/pirateship-image-creator --chroot`. you are now in the pirateship build, not the build machine. 
 - you will now find your built image inside the build machine at `/vagrant/temp`
-- 3x CRTL-D will bring you back
 
