@@ -1,7 +1,8 @@
 Instruction for buildmachine:
 
-- install [virtualbox](https://www.virtualbox.org/wiki/Downloads)
-- install [vagrant](https://www.vagrantup.com/downloads.html)
-- run start.sh for creating the pirateship image
-- 3x CRTL-D will bring you back
-- the modified image will be in directory 'temp'
+- install [virtualbox](https://www.virtualbox.org/wiki/Downloads), confirmed working on v5.0.14
+- install [vagrant](https://www.vagrantup.com/downloads.html), confirmed working on v1.8.1
+- run start.sh to create and start the pirateship build machine. when done, you will be inside the machine. to get back in, run `vagrant ssh`.
+- to build the image, from inside the build machine run `/vagrant/pirateship-image-creator --chroot`. you are now in the pirateship build, not the build machine. 
+- you will now find your built image inside the build machine at `/vagrant/temp`
+

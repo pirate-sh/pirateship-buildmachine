@@ -15,13 +15,13 @@ Vagrant.configure(2) do |config|
   config.vm.box = "debian/jessie64"
   config.vm.box_version = "8.2.1"
 
-  config.vm.hostname = "pirateship"
+  config.vm.hostname = "pirateship-buildmachine"
 
-  config.vm.define "pirateship" do |vb|
+  config.vm.define "pirateship-buildmachine" do |vb|
   end
 
   config.vm.provider "virtualbox" do |vb|
-    vb.name = "pirateship"
+    vb.name = "pirateship-buildmachine"
   end
 
   # Disable automatic box update checking. If you disable this, then
