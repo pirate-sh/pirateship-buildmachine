@@ -13,13 +13,28 @@ There are 3 "machines" you will be working with
 - install [vagrant](https://www.vagrantup.com/downloads.html)
   - confirmed working on v1.8.1 (check with `vagrant --version`)
 
+### Ubuntu
+
+    sudo apt-get install virtualbox
+    sudo apt-get install vagrant
+
+### OSX
+    brew install vagrant
+    brew cask install virtualbox
+
 ## Install
-- get the code: `git clone git@github.com:pirate-sh/pirateship-buildmachine.git`
-- change directory: `cd pirateship-buildmachine`
-- run `./start.sh` to create and start the *Build Machine* called `pirateship-buildmachine
-  - when done, you will be inside the *Build Machine*. (`exit` will bring you back to the *Host*. to get back into the *Build Machine* run `vagrant ssh -c onboot.sh`)
+
+To create and start the _Build Machine_ called `pirateship-buildmachine`, simply:
+ 
+    git clone git@github.com:pirate-sh/pirateship-buildmachine.git
+    cd pirateship-buildmachine
+    ./start.sh
+    
+- when done, you will be inside the *Build Machine*.
+  - typing `exit` will bring you back to the *Host*. To get back into the *Build Machine* run `vagrant ssh -c onboot.sh`
 - to create the *Build* image, from inside the *Build Machine* in the directory `/vagrant` run `./pirateship-image-creator --chroot`
   - when done you are in the pirateship *Build* 
+
 
 ## Use
 - If you stay inside the *Build* you can manually modify the image
